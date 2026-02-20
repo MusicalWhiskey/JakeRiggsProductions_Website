@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import '../styles/Contact.css'; // Your contact styles file
-import headshot from '../assets/photos/headshot.jpg';
+import headshot from '../assets/headshot.jpg';
 // Adjust path/filename if needed
 
 const Contact: React.FC = () => {

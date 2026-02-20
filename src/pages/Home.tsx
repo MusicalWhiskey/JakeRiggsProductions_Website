@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Home.css';
-import headshot from '../assets/photos/headshot.jpg';
+import headshot from '../assets/headshot.jpg';
 
 const Home: React.FC = () => {
   return (

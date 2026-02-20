@@ -6,7 +6,7 @@ import About from './pages/About';
 import Media from './pages/Media';
 import Contact from './pages/Contact';
 import './App.css';
-import BackgroundVideo from './assets/videos/Website_Background.mp4';
+import BackgroundVideo from './assets/Website_Background.mp4';
 
 function App() {
   // Debug code: Monitor video loading and playback events
