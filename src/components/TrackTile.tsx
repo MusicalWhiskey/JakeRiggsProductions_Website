@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 interface TrackTileProps {
   id: number;
@@ -11,7 +11,7 @@ interface TrackTileProps {
   onPlay?: () => void;
 }
 
-const TrackTile = ({ id, title, type, url, thumbnail, description, isActive, onPlay }: TrackTileProps) => {
+const TrackTile = ({ title, type, url, thumbnail, description, isActive, onPlay }: TrackTileProps) => {
   const iframeRef = useRef<HTMLIFrameElement>(null);
 
   useEffect(() => {
