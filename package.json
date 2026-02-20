@@ -1,12 +1,12 @@
 {
   "name": "website_portfolio",
+  "homepage": "https://MusicalWhiskey.github.io/JakeRiggsProductions_Website",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://MusicalWhiskey.github.io/JakeRiggsProductions_Website",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
