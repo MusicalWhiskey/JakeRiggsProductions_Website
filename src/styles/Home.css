@@ -1,0 +1,194 @@
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero-section {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.919) 0%, rgba(0, 0, 0, 0.889) 100%);
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(38, 208, 184, 0.15);
+  transition: all 0.3s ease;
+}
+
+.hero-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 3px solid rgba(38, 208, 184, 0.3);
+  transition: all 0.3s ease, border-color 0.3s ease;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* .hero-section:hover {
+  border-color: rgba(38, 208, 184, 0.35);
+  box-shadow: 0 12px 45px rgba(38, 208, 184, 0.18);
+  transform: translateY(-3px);
+} */
+
+.hero-title {
+  font-size: 4rem;
+  line-height: 1.15;
+  margin-bottom: 1.8rem;
+  padding-bottom: 0.15em;
+  background: linear-gradient(135deg, #26d0b8 0%, #21413c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+  animation: fadeInUp 0.8s ease;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: rgba(235, 245, 240, 0.9); /* Off-white for better contrast */
+  margin-bottom: 1rem;
+  animation: fadeInUp 1s ease;
+}
+
+.hero-tagline {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: rgba(235, 245, 240, 0.75);
+  margin-bottom: 2rem;
+  animation: fadeInUp 1.2s ease;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 1.4s ease;
+}
+
+.social-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  color: #fff;
+}
+
+.social-button .icon {
+  font-size: 1.2rem;
+}
+
+.social-button.spotify {
+  background-color: #1db9546d;
+  box-shadow: 0 4px 15px rgba(29, 185, 84, 0.3);
+}
+
+.social-button.spotify:hover {
+  background-color: #1ed760;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.309);
+  border-color: rgba(38, 208, 184, 0.3); /* Subtle seafoam accent */
+  color: #fff;
+}
+
+.social-button.youtube {
+  background-color: #ff00004c;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+}
+
+.social-button.youtube:hover {
+  background-color: #a11717;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.309);
+  border-color: rgba(38, 208, 184, 0.3);
+  color: #fff;
+}
+
+.social-button.instagram {
+  background: linear-gradient(45deg, #f0953366 0%, #e6693c7b 25%, #dc27426b 50%, #cc236776 75%, #bc188872 100%);
+  box-shadow: 0 4px 15px rgba(225, 48, 108, 0.3);
+}
+
+.social-button.instagram:hover {
+  background: linear-gradient(45deg, #f09533 0%, #e6693c 25%, #dc2742 50%, #cc2367 75%, #bc1888 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.309);
+  border-color: rgba(38, 208, 184, 0.3);
+  color: #fff;
+
+}
+
+.welcome-section {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.919) 0%, rgba(0, 0, 0, 0.889) 100%);
+  padding: 3rem;
+  border-radius: 16px;
+  border: 1px solid rgba(38, 208, 184, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* .welcome-section:hover {
+  border-color: rgba(38, 208, 184, 0.35);
+  box-shadow: 0 10px 35px rgba(38, 208, 184, 0.12);
+  transform: translateY(-3px);
+} */
+
+.welcome-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #26d0b8; /* Bluish seafoam for headings */
+}
+
+.welcome-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(235, 245, 240, 0.9);
+  margin-bottom: 1rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .social-button {
+    justify-content: center;
+  }
+
+  .welcome-section {
+    padding: 2rem;
+  }
+
+  
+}

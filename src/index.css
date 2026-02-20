@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+:root {
+  font-family: 'Exo 2', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  color: rgba(235, 245, 240, 0.92);
+  background-color: #0a0f11;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #26d0b8; /* Bluish seafoam links */
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #0fb39a; /* Darker seafoam on hover */
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #0a0f11 0%,
+    #0e171a 50%,
+    #0a0f11 100%
+  ); /* Deeper, moodier gradient with subtle teal undertone */
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Exo 2', sans-serif;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid rgba(38, 208, 184, 0.25); /* Subtle seafoam border */
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+   font-family: 'Exo 2', sans-serif;
+  background-color: rgba(18, 22, 24, 0.9); /* Dark card-like bg */
+  color: rgba(235, 245, 240, 0.95);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  border-color: #26d0b8;
+  background-color: rgba(38, 208, 184, 0.12);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(38, 208, 184, 0.2);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 3px solid rgba(38, 208, 184, 0.4);
+  outline-offset: 2px;
+}
+
+/* Light mode fallback (minimal, since site is dark-focused) */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #0f1a1c;
+    background-color: #f8fbfc;
+  }
+  a {
+    color: #0fb39a;
+  }
+  a:hover {
+    color: #26d0b8;
+  }
+  button {
+    background-color: #ffffff;
+    border-color: rgba(38, 208, 184, 0.4);
+    color: #0f1a1c;
+  }
+  button:hover {
+    background-color: rgba(38, 208, 184, 0.08);
+  }
+}
