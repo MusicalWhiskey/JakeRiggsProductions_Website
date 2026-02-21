@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -51,7 +51,7 @@ function App() {
   }, []); // Empty array = run once on mount
 
   return (
-    <BrowserRouter basename="/JakeRiggsProductions_Website">
+    <Router>
       <div className="app">
         {/* Full-screen background video */}
         <video
@@ -86,7 +86,7 @@ function App() {
           </footer>
         </div>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
