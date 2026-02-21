@@ -160,6 +160,7 @@
 } */
 
 .welcome-section h2 {
+  text-align: center;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   color: #26d0b8; /* Bluish seafoam for headings */
