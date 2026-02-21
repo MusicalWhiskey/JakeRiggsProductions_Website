@@ -47,13 +47,13 @@ const Home: React.FC = () => {
       <div className="welcome-section">
         <h2>Welcome! </h2>
         <p>
-          Thanks for stopping by. I'm passionate about creating music that connects with people. 
-          Whether you're here to discover new tracks, learn more about my journey, or just vibe out 
+          Thanks for stopping by. I'm passionate about creating music and experiences that connect with people. 
+          Whether you're here to discover new tracks, learn more about my background, or just vibe out 
           to some tunes, I'm glad you're here.
         </p>
         <p>
           Explore my media page to check out my latest videos, learn more about me in the about section, 
-          or get in touch if you'd like to collaborate or just say hi!
+          or get in touch if you'd like to collaborate... or just say hi!
         </p>
       </div>
     </div>
