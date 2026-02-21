@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import '../styles/Contact.css'; // Your contact styles file
 import headshot from '../assets/headshot.jpg';
+import { config } from '../config';
 // Adjust path/filename if needed
 
 const Contact: React.FC = () => {
@@ -15,10 +16,10 @@ const Contact: React.FC = () => {
 
     emailjs
       .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        config.emailjs.serviceId,
+        config.emailjs.templateId,
         form.current,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+        config.emailjs.publicKey
       )
       .then(
         () => {

@@ -2,8 +2,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/JakeRiggsProductions_Website/',   // ← THIS LINE IS REQUIRED
+  base: '/JakeRiggsProductions_Website/', // Your repo name
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false
+  }
 })
