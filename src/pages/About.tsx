@@ -11,7 +11,7 @@ const About: React.FC = () => {
 
       <div className="about-content">
         <div className="about-section">
-          <h2>🎸 My Journey</h2>
+          <h2>My Journey</h2>
           <p>
             Music has always been my passion and creative outlet. From the first time I picked up 
             an instrument to producing tracks in my home studio, every step of this journey has been 
@@ -24,7 +24,7 @@ const About: React.FC = () => {
         </div>
 
         <div className="about-section">
-          <h2>🎼 Musical Style</h2>
+          <h2>Musical Style</h2>
           <p>
             My sound blends various influences, creating something unique and personal. I love 
             experimenting with different genres and techniques, always pushing to create something 
@@ -33,7 +33,7 @@ const About: React.FC = () => {
         </div>
 
         <div className="about-section">
-          <h2>🌟 Philosophy</h2>
+          <h2>Philosophy</h2>
           <p>
             "Music is the universal language that speaks when words fail. Every track I create is 
             a conversation, an experience, a moment captured in sound."

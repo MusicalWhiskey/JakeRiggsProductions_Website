@@ -87,40 +87,40 @@
 }
 
 .social-button.spotify {
-  background-color: #1db9546d;
+  background: linear-gradient(135deg, #26d0b8 0%, #21413c 100%);
   box-shadow: 0 4px 15px rgba(29, 185, 84, 0.3);
 }
 
 .social-button.spotify:hover {
   background-color: #1ed760;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.309);
+  box-shadow: 0 6px 20px rgba(132, 132, 132, 0.701);
   border-color: rgba(38, 208, 184, 0.3); /* Subtle seafoam accent */
   color: #fff;
 }
 
 .social-button.youtube {
-  background-color: #ff00004c;
-  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+  background: linear-gradient(135deg, #26d0b8 0%, #21413c 100%);
+  box-shadow: 0 4px 15px rgba(93, 149, 158, 0.3);
 }
 
 .social-button.youtube:hover {
-  background-color: #a11717;
+  background: linear-gradient(135deg, #26d0b8 0%, #21413c 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.309);
+  box-shadow: 0 6px 20px rgba(132, 132, 132, 0.701);
   border-color: rgba(38, 208, 184, 0.3);
   color: #fff;
 }
 
 .social-button.instagram {
-  background: linear-gradient(45deg, #f0953366 0%, #e6693c7b 25%, #dc27426b 50%, #cc236776 75%, #bc188872 100%);
-  box-shadow: 0 4px 15px rgba(225, 48, 108, 0.3);
+  background: linear-gradient(135deg, #26d0b8 0%, #21413c 100%);
+  box-shadow: 0 4px 15px rgba(93, 149, 158, 0.3);
 }
 
 .social-button.instagram:hover {
-  background: linear-gradient(45deg, #f09533 0%, #e6693c 25%, #dc2742 50%, #cc2367 75%, #bc1888 100%);
+  background: linear-gradient(135deg, #26d0b8 0%, #21413c 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.309);
+  box-shadow: 0 6px 20px rgba(132, 132, 132, 0.701);
   border-color: rgba(38, 208, 184, 0.3);
   color: #fff;
 

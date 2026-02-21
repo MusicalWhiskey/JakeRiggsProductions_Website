@@ -11,7 +11,7 @@ const Home: React.FC = () => {
         <p className="hero-subtitle">Composer | Sound Designer | Producer 
           <br/>Programmer | Developer</p>
         <p className="hero-tagline">
-          "Learn something new everyday, and never stop creating."
+          "Learn Everyday & Never Stop Creating"
         </p>
         
         <div className="social-links">
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
       </div>
 
       <div className="welcome-section">
-        <h2>Welcome! 👋</h2>
+        <h2>Welcome! </h2>
         <p>
           Thanks for stopping by. I'm passionate about creating music that connects with people. 
           Whether you're here to discover new tracks, learn more about my journey, or just vibe out 
