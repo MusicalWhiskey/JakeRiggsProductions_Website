@@ -1,5 +1,6 @@
 // Centralized configuration for environment variables
 
+
 interface EmailJSConfig {
   serviceId: string;
   templateId: string;
