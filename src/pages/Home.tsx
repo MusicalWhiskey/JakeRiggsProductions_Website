@@ -6,10 +6,12 @@ const Home: React.FC = () => {
   return (
     <div className="home-page">
       <div className="hero-section">
-        <h1 className="hero-title">Jake Riggs</h1>
-        <img src={headshot} alt="Jake Riggs" className="hero-image" />
+        <div className="hero-header">
+          <h1 className="hero-title">Jake Riggs</h1>
+          <img src={headshot} alt="Jake Riggs" className="hero-image" />
+        </div>
         <p className="hero-subtitle">Composer | Sound Designer | Producer 
-          <br/>Programmer | Developer</p>
+        <br/>Programmer | Developer</p>
         <p className="hero-tagline">
           "Learn Everyday & Never Stop Creating"
         </p>
