@@ -9,7 +9,7 @@ const Navigation: React.FC = () => {
     <nav className="navigation">
       <div className="nav-container">
         <Link to="/" className="nav-brand">
-          Jake Riggs
+          Jake Riggs Productions
         </Link>
         <ul className="nav-menu">
           <li>

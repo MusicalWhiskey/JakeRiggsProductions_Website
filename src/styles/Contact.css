@@ -1,18 +1,17 @@
 .contact-page {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem 4rem;
-  min-height: calc(100vh - 140px);
+  padding: 1rem 1rem 4rem;           /* Reduced top padding – closer to nav */
+  min-height: auto;                  /* Let content flow naturally */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .contact-header {
   text-align: center;
-  margin-bottom: 2rem;            /* Slightly more space below header */
-  padding: 2rem;
+  margin: 1rem 0 2rem;               /* Less top margin for tighter feel */
+  padding: 1.5rem 1rem;
   width: 100%;
   max-width: 800px;
 }
@@ -28,60 +27,53 @@
 
 .contact-header .subtitle {
   font-size: 1.3rem;
-  color: rgba(255, 255, 255, 0.65); /* Slightly darker for mood */
+  color: rgba(255, 255, 255, 0.65);
 }
 
-/* Main grid layout – increased gap to prevent overlap */
+/* Main grid – reduced gap between cards */
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3.5rem;                      /* ← Increased from 2.5rem – main fix for overlap */
+  gap: 2rem;                         /* ← Reduced from 3.5rem – main fix */
   width: 100%;
-  max-width: 1200px;                /* Slightly wider max to use space better */
+  max-width: 1200px;
   margin: 0 auto;
   justify-content: center;
-  align-items: start;               /* Align tops so cards don't stretch unevenly */
+  align-items: start;
 }
 
-/* Card styles – reduced padding, added safety */
+/* Card styles */
 .contact-info,
 .contact-form {
   width: 100%;
   max-width: 580px;
   margin: 0 auto;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.919) 0%, rgba(0, 0, 0, 0.889) 100%);
-  padding: 2rem;                    /* ← Reduced from 2.5rem to give grid more control */
+  padding: 2rem;
   border-radius: 16px;
   border: 1px solid rgba(38, 208, 184, 0.15);
-  box-sizing: border-box;           /* Ensures padding doesn't add to width */
-  overflow: hidden;                 /* Prevents internal content from causing overflow */
+  box-sizing: border-box;
+  overflow: hidden;
   transition: all 0.3s ease;
 }
+
 .contact-info {
   display: flex;
   flex-direction: column;
-  align-items: center;               /* Centers ALL children horizontally */
-  justify-content: flex-start;       /* Start from top, no forced vertical stretch */
-  text-align: center;                /* Text centering for h2, p, etc. */
-  padding: 2.5rem 2rem;              /* Balanced padding */
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.919) 0%, rgba(0, 0, 0, 0.889) 100%);
-  border-radius: 16px;
-  border: 1px solid rgba(38, 208, 184, 0.15);
-  transition: all 0.3s ease;
-  width: 100%;
-  max-width: 580px;
-  margin: 0 auto;
-  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 2.5rem 2rem;
 }
 
-/* .contact-info:hover,
+.contact-info:hover,
 .contact-form:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 35px rgba(38, 208, 184, 0.12);
   border-color: rgba(38, 208, 184, 0.35);
-} */
+}
 
-/* Headshot – remains small and constrained */
+/* Headshot */
 .headshot-container {
   text-align: center;
   margin: 1.5rem 0 2rem;
@@ -100,12 +92,6 @@
   display: block;
   margin: 0 auto;
 }
-
-/* .contact-headshot:hover {
-  transform: scale(1.08);
-  border-color: #26d0b8;
-  box-shadow: 0 10px 30px rgba(38, 208, 184, 0.25);
-} */
 
 /* Invitation & email */
 .invitation-text {
@@ -181,7 +167,7 @@
   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.173);
 }
 
-/* Status */
+/* Status message */
 .form-status {
   margin-top: 1.5rem;
   padding: 1rem;
@@ -210,11 +196,11 @@
   justify-content: center;
 }
 
-/* ── Responsive ── */
+/* Responsive */
 @media (max-width: 968px) {
   .contact-content {
     grid-template-columns: 1fr;
-    gap: 4rem;                      /* Even larger vertical gap when stacked */
+    gap: 2.5rem;                      /* Reduced vertical gap when stacked */
     max-width: 700px;
   }
 
@@ -224,18 +210,17 @@
   }
 
   .contact-page {
-    padding: 3rem 1rem 5rem;
-    min-height: auto;
+    padding: 1rem 1rem 3rem;
   }
 }
 
 @media (max-width: 600px) {
   .contact-header {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   .contact-content {
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .contact-headshot {
@@ -247,6 +232,6 @@
 
   .contact-info,
   .contact-form {
-    padding: 1.8rem;                /* Slightly less padding on small screens */
+    padding: 1.8rem;
   }
 }

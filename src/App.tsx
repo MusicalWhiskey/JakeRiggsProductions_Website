@@ -51,7 +51,7 @@ function App() {
   }, []); // Empty array = run once on mount
 
   return (
-    <BrowserRouter basename="/JakeRiggsProductions_Website">
+    <BrowserRouter basename="/JakeRiggsProductions_Website/">
       <div className="app">
         {/* Full-screen background video */}
         <video
