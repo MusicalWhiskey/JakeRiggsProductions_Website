@@ -1,6 +1,7 @@
 <div align="center">
 
 # 🎶 Jake Riggs Portfolio Website 🎶
+
   <br/>
   https://musicalwhiskey.github.io/JakeRiggsProductions_Website/
   <br/>
@@ -189,6 +190,7 @@ npm run preview
 - **Vite** - Build tool and dev server
 - **React Router DOM** - Client-side routing
 - **CSS3** - Styling with modern features
+- **EmailJS** - Send in Email While Using Embedded Form (YOU MUST USE GITHUB PAGE'S SECRETS TO APPLY YOUR KEYS!!!)
 
 ## Connect With Me
 
